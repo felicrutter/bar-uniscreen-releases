@@ -1,0 +1,30 @@
+Bar UniScreen - third-party notices
+===================================
+
+Bar UniScreen includes the following unmodified third-party libraries as separate DLL files.
+The full license texts are in the "licenses" folder next to this file.
+
+1. LibreHardwareMonitorLib 0.9.6 (LibreHardwareMonitorLib.dll)
+   License: Mozilla Public License 2.0 (licenses\MPL-2.0.txt)
+   Source:  https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+   Used for GPU sensors only (AMD ADL / NVIDIA NVAPI, user mode, no driver).
+
+2. LibUsbDotNet 2.2.29 (LibUsbDotNet.LibUsbDotNet.dll)
+   License: GNU Lesser General Public License v3.0 (licenses\LGPL-3.0.txt, licenses\GPL-3.0.txt)
+   Source:  https://github.com/LibUsbDotNet/LibUsbDotNet
+   Package: https://www.nuget.org/packages/LibUsbDotNet/2.2.29
+   The library is used unmodified and is dynamically linked. You may replace
+   LibUsbDotNet.LibUsbDotNet.dll with your own build of a compatible version.
+
+3. .NET libraries from Microsoft (System.Buffers, System.CodeDom, System.Memory,
+   System.Numerics.Vectors, System.Runtime.CompilerServices.Unsafe,
+   System.Security.AccessControl, System.Security.Principal.Windows,
+   System.Threading.AccessControl)
+   License: MIT (licenses\dotnet-runtime-MIT.txt)
+   Source:  https://github.com/dotnet/runtime
+
+Trademarks
+----------
+Bar UniScreen is an independent project. It is not affiliated with, endorsed by or
+sponsored by Lian Li Industrial Co., Ltd. "Lian Li" and "L-Connect" are trademarks of
+their respective owners and are used only to describe hardware compatibility.

@@ -1,0 +1,13 @@
+Bar UniScreen
+Copyright (c) 2026 Bar UniScreen. All rights reserved.
+
+TR - Bar UniScreen ücretsiz olarak kullanılabilir ve dağıtılabilir. Yazılım "olduğu gibi"
+sağlanır; açık veya örtük hiçbir garanti verilmez. Yazılımın kullanımından doğan hiçbir
+zarardan geliştirici sorumlu tutulamaz. Bar UniScreen, Lian Li ile bağlantılı değildir.
+Üçüncü taraf bileşenlerin lisansları THIRD-PARTY-NOTICES.txt dosyasındadır.
+
+EN - Bar UniScreen may be used and redistributed free of charge. The software is provided
+"as is", without warranty of any kind, express or implied. In no event shall the author be
+liable for any claim, damages or other liability arising from the use of the software.
+Bar UniScreen is not affiliated with Lian Li. Third-party component licenses are listed in
+THIRD-PARTY-NOTICES.txt.
