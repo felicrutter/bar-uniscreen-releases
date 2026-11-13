@@ -7,7 +7,8 @@ The full license texts are in the "licenses" folder next to this file.
 1. LibreHardwareMonitorLib 0.9.6 (LibreHardwareMonitorLib.dll)
    License: Mozilla Public License 2.0 (licenses\MPL-2.0.txt)
    Source:  https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
-   Used for GPU sensors only (AMD ADL / NVIDIA NVAPI, user mode, no driver).
+   Used for GPU sensors (AMD ADL / NVIDIA NVAPI, user mode, no driver). The temperature
+   service also takes the PawnIO IntelMSR module (item 5) from its resources.
 
 2. LibUsbDotNet 2.2.29 (LibUsbDotNet.LibUsbDotNet.dll)
    License: GNU Lesser General Public License v3.0 (licenses\LGPL-3.0.txt, licenses\GPL-3.0.txt)
@@ -22,6 +23,23 @@ The full license texts are in the "licenses" folder next to this file.
    System.Threading.AccessControl)
    License: MIT (licenses\dotnet-runtime-MIT.txt)
    Source:  https://github.com/dotnet/runtime
+
+4. PawnIO 2.2.0 (installed by the setup on Intel CPUs, only if not already installed)
+   Copyright (C) namazso
+   License: GNU General Public License v2.0 or later, with the PawnIO special exception
+            (licenses\GPL-2.0.txt); PawnIOLib: GNU LGPL v2.1 (licenses\LGPL-2.1.txt)
+   Source:  https://github.com/namazso/PawnIO
+   Setup:   https://github.com/namazso/PawnIO.Setup/releases/tag/2.2.0
+   The setup carries the official, signed PawnIO_setup.exe unmodified and runs it with
+   "-install -silent". PawnIO is a separate program: it stays installed when Bar UniScreen
+   is removed and can be uninstalled on its own from Windows "Apps".
+   The Bar UniScreen temperature service (BarUniScreenTemp.exe) loads PawnIOLib.dll from the
+   PawnIO installation and runs only the IntelMSR module, reading only the CPU temperature
+   registers (MSR 0x19C, 0x1A2, 0x1B1).
+
+5. PawnIO IntelMSR module (embedded in LibreHardwareMonitorLib.dll, item 1)
+   License: GNU Lesser General Public License v2.1 (licenses\LGPL-2.1.txt)
+   Source:  https://github.com/namazso/PawnIO.Modules
 
 Trademarks
 ----------
